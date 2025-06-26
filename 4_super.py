@@ -4,13 +4,13 @@ class Employee:
     a = 1
 
 class Programmer(Employee):
-    def __init__(self):
+    def __init__(self):          
         print("Constructor of Programmer")
     b = 2
 
 class Manager(Programmer):
     def __init__(self):
-        super().__init__()
+        super().__init__()     #   this calls the parent, i.e., Programmer
         print("Constructor of Manager")
     c =  3
 
